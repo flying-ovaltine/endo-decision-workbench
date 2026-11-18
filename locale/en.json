@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Endocrinology Decision Team",
+    "description": "A decision workbench for frontline endocrinologists: case intake, six workflows, a differential table ranked on two axes (likelihood x harm if missed) where every row must carry counter-evidence, branching workup paths and a treatment plan with six evidence grades. Emergency red flags (acute diabetic complications, thyroid storm, pituitary apoplexy and others) interrupt everything and return three lines only. Ships a matching skill; one click copies the case brief into the chat."
+  }
+}

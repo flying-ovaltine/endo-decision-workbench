@@ -1,0 +1,13 @@
+# 内分泌临床决策专家团（DeepSeek Harness 插件）
+#
+# 安装后同时得到：
+#   1. 左侧边栏主面板「内分泌决策」：病例录入 / 六个工作流 / 鉴别表（双轴排序 + 反证校验）/
+#      检查路径 / 诊疗计划（六档证据标记）/ 急诊红线中断
+#   2. 技能 endocrinology-decision-team：面板「复制病例简报」后由它接管专业口径
+#
+# 自带空配置，绝不弄崩启动。
+#
+- insert:
+    - id: endo-decision-workbench
+      name: dsh-endo-decision-team
+      config: {}

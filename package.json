@@ -1,0 +1,61 @@
+{
+  "name": "dsh-endo-decision-team",
+  "version": "1.0.0",
+  "private": false,
+  "description": "内分泌临床决策专家团：给一线内分泌医生的决策工作台（鉴别清单双轴排序、反证校验、六档证据标记、急诊红线中断），规则以技能形式随包分发。Endocrinology decision workbench for frontline endocrinologists: dual-axis differential ranking, counter-evidence validation, six evidence grades, emergency red-flag interruption.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client/index.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.png",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "client",
+    "resources",
+    "locale",
+    "assets",
+    "icon.png",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test test/smoke.mjs"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "endocrinology",
+    "clinical-decision",
+    "differential-diagnosis",
+    "medical",
+    "内分泌",
+    "鉴别诊断",
+    "临床决策"
+  ],
+  "author": "杨杨",
+  "license": "MIT",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.6.3"
+  }
+}
